@@ -1,0 +1,64 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Jost:wght@300;400;500;600&display=swap');
+
+@theme {
+  /* ---- Palette ---------------------------------------------------- */
+  --color-cream: #FBF3EA;
+  --color-cream-deep: #F3E6D6;
+  --color-blush: #F1C9D3;
+  --color-blush-soft: #F7DEE4;
+  --color-rose: #C2555F;
+  --color-wine: #5A1930;
+  --color-wine-deep: #3A0F20;
+  --color-gold: #C9A24B;
+  --color-gold-soft: #E4CD93;
+  --color-navy: #1B1330;
+  --color-navy-deep: #100B20;
+
+  /* ---- Type ---------------------------------------------------------- */
+  --font-display: 'Cormorant Garamond', 'Georgia', serif;
+  --font-body: 'Jost', 'system-ui', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background: var(--color-cream);
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--color-rose);
+  color: var(--color-cream);
+}
+
+/* Subtle geometric Islamic lattice, used as a low-opacity repeating layer */
+.lattice-pattern {
+  background-image: radial-gradient(circle at 1px 1px, currentColor 1px, transparent 0);
+  background-size: 28px 28px;
+}
+
+.arabesque-divider {
+  position: relative;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
