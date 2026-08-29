@@ -61,23 +61,34 @@ Happy Birthday ❤️`,
   // MUSIC
   // Drop an mp3 file at public/audio/birthday-song.mp3 and it will
   // automatically appear here. Nothing autoplays.
-  // --------------------------------------------------------------------
-  music: "/audio/the_mountain-birthday-490600.mp3",
+ music: `${import.meta.env.BASE_URL}audio/the_mountain-birthday-490600.mp3`,
 
-  // --------------------------------------------------------------------
-  // PHOTOS
-  // Drop 6 images into public/images/ using these exact filenames and
-  // they will appear automatically. Edit the captions freely.
-  // --------------------------------------------------------------------
-  photos: [
-    { src: "/images/WhatsApp Image 2026-08-22 at 12.15.40 AM.jpeg", caption: " 🌙Husn tera kisi ghazal se kam nahi,Tu saamne ho toh chaand bhi nazar nahi aata. ❤️‍🔥" },
-    { src: "images/WhatsApp Image 2026-08-22 at 12.22.33 AM.jpeg", caption: "Tere husn ko dekha toh ye khayal aaya, chaand bhi shayad tujhe dekh kar sharmaata hoga. 🌙❤️" },
-    { src: "images/WhatsApp Image 2026-08-22 at 12.22.33 AM (1).jpeg", caption: "Woh saamne aaye toh lafz khamosh ho gaye, husn aisa tha ke hum bas dekhte reh gaye. ✨🥀" },
-    { src: "images/WhatsApp Image 2026-08-22 at 12.22.32 AM.jpeg", caption: "Teri ek nazar ne kamaal kar diya, jo dil tha mera, usey behaal kar diya. ❤️‍🔥" },
-    { src: "images/WhatsApp Image 2026-08-22 at 1.34.21 PM.jpeg", caption: "Tere chehre ki kya tareef karun, lafz khatam ho jaate hain, tera husn nahi. ✨🥀" },
-    { src: "images/WhatsApp Image 2026-08-22 at 4.47.21 PM.jpeg", caption: "Teri ek nazar kya padi mujh par,dil ne kaha—ab isse khoobsurat kya dekhenge.✨" },
-  ],
-
+photos: [
+  {
+    src: `${import.meta.env.BASE_URL}images/WhatsApp Image 2026-08-22 at 12.15.40 AM.jpeg`,
+    caption: "🌙Husn tera kisi ghazal se kam nahi, Tu saamne ho toh chaand bhi nazar nahi aata. ❤️‍🔥"
+  },
+  {
+    src: `${import.meta.env.BASE_URL}images/WhatsApp Image 2026-08-22 at 12.22.33 AM.jpeg`,
+    caption: "Tere husn ko dekha toh ye khayal aaya, chaand bhi shayad tujhe dekh kar sharmaata hoga. 🌙❤️"
+  },
+  {
+    src: `${import.meta.env.BASE_URL}images/WhatsApp Image 2026-08-22 at 12.22.33 AM (1).jpeg`,
+    caption: "Woh saamne aaye toh lafz khamosh ho gaye, husn aisa tha ke hum bas dekhte reh gaye. ✨🥀"
+  },
+  {
+    src: `${import.meta.env.BASE_URL}images/WhatsApp Image 2026-08-22 at 12.22.32 AM.jpeg`,
+    caption: "Teri ek nazar ne kamaal kar diya, jo dil tha mera, usey behaal kar diya. ❤️‍🔥"
+  },
+  {
+    src: `${import.meta.env.BASE_URL}images/WhatsApp Image 2026-08-22 at 1.34.21 PM.jpeg`,
+    caption: "Tere chehre ki kya tareef karun, lafz khatam ho jaate hain, tera husn nahi. ✨🥀"
+  },
+  {
+    src: `${import.meta.env.BASE_URL}images/WhatsApp Image 2026-08-22 at 4.47.21 PM.jpeg`,
+    caption: "Teri ek nazar kya padi mujh par, dil ne kaha—ab isse khoobsurat kya dekhenge. ✨"
+  },
+],
   // --------------------------------------------------------------------
   // MEMORY TIMELINE
   // Edit these freely — titles, dates and descriptions.
